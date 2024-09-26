@@ -49,34 +49,29 @@ This project is an E-Library Management System developed using Laravel for the N
 
 1. Clone the repository:
 
-    \`\`\`bash
-    git clone https://github.com/coding-fortunatus/e-library.git
-    \`\`\`
+    `bash`
+    `git clone https://github.com/coding-fortunatus/e-library.git`
 
 2. Navigate to the project directory:
 
-    \`\`\`bash
-    cd e-library
-    \`\`\`
+    `bash`
+    `cd e-library`
 
 3. Install the dependencies:
 
-    \`\`\`bash
-    composer install
-    npm install
-    \`\`\`
+    `bash`
+    `composer install`
+    `npm install`
 
 4. Create a `.env` file by copying `.env.example`:
 
-    \`\`\`bash
-    cp .env.example .env
-    \`\`\`
+    `bash`
+    `cp .env.example .env`
 
 5. Generate the application key:
 
-    \`\`\`bash
-    php artisan key:generate
-    \`\`\`
+    `bash`
+    ` php artisan key:generate`
 
 6. Configure the database settings in the `.env` file:
 
@@ -91,25 +86,29 @@ This project is an E-Library Management System developed using Laravel for the N
 
 7. Run the migrations to create the database tables:
 
-    \`\`\`bash
+    \`\`\`
+    bash
     php artisan migrate
     \`\`\`
 
 8. Seed the database (optional):
 
-    \`\`\`bash
+    \`\`\`
+    bash
     php artisan db:seed
     \`\`\`
 
 9. Serve the application locally:
 
-    \`\`\`bash
+    \`\`\`
+    bash
     php artisan serve
     \`\`\`
 
 10. Compile the frontend assets:
 
-    \`\`\`bash
+    \`\`\`
+    bash
     npm run dev
     \`\`\`
 
