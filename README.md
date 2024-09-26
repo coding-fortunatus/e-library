@@ -1,66 +1,145 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Nigerian British University E-Library Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project is an E-Library Management System developed using Laravel for the Nigerian British University (NBU). It is designed to provide a seamless and user-friendly interface for managing digital resources for different user types: Admin, Staff, Students, and Visitors. Each user type has different levels of access to the system and its functionalities.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+-   **Admin**:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    -   Manage users (Staff, Students, and Visitors)
+    -   Add, edit, and delete digital resources
+    -   Generate reports on resource usage
+    -   Oversee system operations and configurations
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   **Staff**:
 
-## Learning Laravel
+    -   Upload, edit, and manage digital resources
+    -   View resource usage statistics
+    -   Interact with students and visitors for resource-related inquiries
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   **Students**:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    -   Browse, search, and read resources
+    -   Download available resources
+    -   Interact with staff for resource-related support
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **Visitors**:
+    -   Browse and search for resources
+    -   Read available resources (download access is restricted)
 
-## Laravel Sponsors
+## Technologies Used
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   **Backend**: Laravel (PHP)
+-   **Frontend**: HTML5, CSS3, Bootstrap, JavaScript
+-   **Database**: MySQL
+-   **Authentication**: Laravel Sanctum for user authentication and role-based access control
+-   **File Storage**: Local filesystem or cloud storage (AWS S3, Google Cloud Storage)
 
-### Premium Partners
+## Installation
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Prerequisites
 
-## Contributing
+-   PHP >= 8.1
+-   Composer
+-   MySQL or any supported database
+-   Web server (Apache, Nginx)
+-   Node.js and npm (for asset management)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Setup
 
-## Code of Conduct
+1. Clone the repository:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    \`\`\`bash
+    git clone https://github.com/coding-fortunatus/e-library.git
+    \`\`\`
 
-## Security Vulnerabilities
+2. Navigate to the project directory:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    \`\`\`bash
+    cd e-library
+    \`\`\`
+
+3. Install the dependencies:
+
+    \`\`\`bash
+    composer install
+    npm install
+    \`\`\`
+
+4. Create a `.env` file by copying `.env.example`:
+
+    \`\`\`bash
+    cp .env.example .env
+    \`\`\`
+
+5. Generate the application key:
+
+    \`\`\`bash
+    php artisan key:generate
+    \`\`\`
+
+6. Configure the database settings in the `.env` file:
+
+    \`\`\`
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=e_library
+    DB_USERNAME=root
+    DB_PASSWORD=
+    \`\`\`
+
+7. Run the migrations to create the database tables:
+
+    \`\`\`bash
+    php artisan migrate
+    \`\`\`
+
+8. Seed the database (optional):
+
+    \`\`\`bash
+    php artisan db:seed
+    \`\`\`
+
+9. Serve the application locally:
+
+    \`\`\`bash
+    php artisan serve
+    \`\`\`
+
+10. Compile the frontend assets:
+
+    \`\`\`bash
+    npm run dev
+    \`\`\`
+
+### Admin Access
+
+To access the admin dashboard, use the following credentials after seeding the database:
+
+-   Email: `admin@nbu.edu`
+-   Password: `admin@nbu`
+
+You can change these details in the admin panel.
+
+## Usage
+
+-   **Admin Dashboard**: Admins can manage all aspects of the library system, including user management, resource uploads, and system configurations.
+-   **Staff Dashboard**: Staff members can upload and manage digital resources and interact with users.
+-   **Student Access**: Students can browse, read, and download resources, based on the resource permissions set by the admin or staff.
+-   **Visitor Access**: Visitors can browse and read resources but do not have download permissions.
+
+## Contribution Guidelines
+
+-   Fork the repository.
+-   Create a new branch for your feature or bug fix.
+-   Make your changes.
+-   Submit a pull request.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Developed and maintained by the Nigerian British University ICT Department.
