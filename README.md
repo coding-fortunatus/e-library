@@ -75,42 +75,32 @@ This project is an E-Library Management System developed using Laravel for the N
 
 6. Configure the database settings in the `.env` file:
 
-    \`\`\`
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=e_library
-    DB_USERNAME=root
-    DB_PASSWORD=
-    \`\`\`
+    `DB_CONNECTION=mysql`
+    `DB_HOST=127.0.0.1`
+    `DB_PORT=3306`
+    `DB_DATABASE=e_library`
+    `DB_USERNAME=root`
+    `DB_PASSWORD=`
 
 7. Run the migrations to create the database tables:
 
-    \`\`\`
-    bash
-    php artisan migrate
-    \`\`\`
+    `bash`
+    `php artisan migrate`
 
 8. Seed the database (optional):
 
-    \`\`\`
-    bash
-    php artisan db:seed
-    \`\`\`
+    `bash`
+    `php artisan db:seed`
 
 9. Serve the application locally:
 
-    \`\`\`
-    bash
-    php artisan serve
-    \`\`\`
+    `bash`
+    `php artisan serve`
 
 10. Compile the frontend assets:
 
-    \`\`\`
-    bash
-    npm run dev
-    \`\`\`
+    `bash`
+    `npm run dev`
 
 ### Admin Access
 
