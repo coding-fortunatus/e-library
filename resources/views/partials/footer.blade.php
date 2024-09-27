@@ -27,16 +27,18 @@
 										<span aria-hidden="true">×</span>
 								</button>
 						</div>
-						<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+						<div class="modal-body">Click "Confirm" below if you are ready to end your current session.</div>
 						<div class="modal-footer">
-								<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-								<a class="btn btn-primary" href="login.html">Logout</a>
+								<button class="btn btn-warning" type="button" title="Cancel Button" data-dismiss="modal">Cancel</button>
+								<button class="btn btn-danger" type="submit" title="Logout Button">Confirm</button>
 						</div>
 				</div>
 		</div>
 </div>
 
 <!-- Bootstrap core JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="/vendor/jquery/jquery.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -52,6 +54,11 @@
 <!-- Page level custom scripts -->
 <script src="/js/demo/chart-area-demo.js"></script>
 <script src="/js/demo/chart-pie-demo.js"></script>
+<script src="/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="/js/demo/datatables-demo.js"></script>
 
 </body>
 
