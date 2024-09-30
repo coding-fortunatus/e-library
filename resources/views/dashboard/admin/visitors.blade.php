@@ -22,9 +22,9 @@
 														<th>Code</th>
 														<th>Email</th>
 														<th>Phone Number</th>
+														<th>Pin</th>
 														<th>Status</th>
 														<th>Actions</th>
-														<th></th>
 												</tr>
 										</thead>
 										<tbody>
@@ -33,6 +33,7 @@
 														<td>LIB/VST/2423</td>
 														<td>raymon.dwight@nbu.edu.ng</td>
 														<td>08176593438</td>
+														<td>0123456789</td>
 														<td>Active</td>
 														<td>
 																<button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteVisitor"
@@ -41,8 +42,6 @@
 																<button type="button" data-bs-toggle="modal" data-bs-target="#updateVisitor"
 																		class="btn btn-sm btn-warning" title="Edit visitor"><i class="fas fa-pen"></i>
 																		Edit</button>
-														</td>
-														<td>
 														</td>
 												</tr>
 										</tbody>
@@ -53,7 +52,7 @@
 
 		<!-- Add Visitor Modal -->
 		<div class="modal fade" id="addVisitor" tabindex="-1" aria-labelledby="addNewVisitor" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-dialog ">
 						<div class="modal-content">
 								<div class="modal-body">
 										<div class="col-lg-12">
@@ -74,11 +73,11 @@
 														</div>
 														<div class="form-group row">
 																<div class="col-sm-6 mb-sm-0">
-																		<input type="password" class="form-control form-control-user" id="password" placeholder="Password">
+																		<input type="password" class="form-control form-control-user" id="password" placeholder="Pin">
 																</div>
 																<div class="col-sm-6">
 																		<input type="password" class="form-control form-control-user" id="repeatpassword"
-																				placeholder="Repeat Password">
+																				placeholder="Repeat Pin">
 																</div>
 														</div>
 														<div class="modal-footer">
@@ -94,7 +93,7 @@
 
 		<!-- Update Visitor modal -->
 		<div class="modal fade" id="updateVisitor" tabindex="-1" aria-labelledby="editVisitor" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-dialog">
 						<div class="modal-content">
 								<div class="modal-body">
 										<div class="col-lg-12">

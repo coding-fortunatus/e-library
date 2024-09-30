@@ -1,17 +1,17 @@
 @section('title')
-		Article Management - E-Library
+		Journals Management - E-Library
 @endsection
 @extends('main')
 @section('content')
 		<!-- Page Heading -->
 		<div class="d-sm-flex align-items-center justify-content-between mb-2">
-				<h1 class="h3 text-gray-800">Articles</h1>
-				<button type="button" data-bs-toggle="modal" data-bs-target="#addArticle"
-						class="btn btn-sm btn-danger d-none d-sm-inline-block shadow-sm" title="Add new article"> <i class="fas fa-plus"></i>
-						Add article</button>
+				<h1 class="h3 text-gray-800">Journals</h1>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#addJournal"
+						class="btn btn-sm btn-danger d-none d-sm-inline-block shadow-sm" title="Add new journal"> <i class="fas fa-plus"></i>
+						Add journal</button>
 		</div>
 
-		<!-- Articles list -->
+		<!-- Journal list -->
 		<div class="card shadow mb-4">
 				<div class="card-body">
 						<div class="table-responsive">
@@ -40,13 +40,13 @@
 														<td>Computer Science</td>
 														<td>Intel Cooperations</td>
 														<td>5</td>
-														<td>Students & Staffs</td>
+														<td>Students</td>
 														<td>
-																<button class="btn btn-sm btn-info" title="View Article">View</button>
+																<button class="btn btn-sm btn-info" title="View journal">View</button>
 																<button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#edit"
-																		title="Modify journal information button">Edit</button>
+																		title="Modify journal information">Edit</button>
 																<button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete"
-																		title="Modify journal information button">Delete</button>
+																		title="Delete journal information">Delete</button>
 														</td>
 												</tr>
 										</tbody>
@@ -55,14 +55,14 @@
 				</div>
 		</div>
 
-		<!-- Add article Modal -->
-		<div class="modal fade" id="addArticle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<!-- Add Journal Modal -->
+		<div class="modal fade" id="addJournal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 						<div class="modal-content">
 								<div class="modal-header">
-										<h3 class="modal-title fs-2" id="exampleModalLabel">Add new article</h3>
+										<h3 class="modal-title fs-2" id="exampleModalLabel">Add new journal</h3>
 								</div>
-								<div class="modal-body p-3">
+								<div class="modal-body">
 										<form class="row g-3">
 												<div class="col-md-6 mb-3">
 														<label for="title" class="form-label">Title</label>
@@ -120,17 +120,17 @@
 				</div>
 		</div>
 
-		<!-- Delete Visitor Modal -->
+		<!-- Delete Journal Modal -->
 		<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="delete" aria-hidden="true">
 				<div class="modal-dialog">
 						<div class="modal-content">
 								<div class="modal-body">
 										<div class="col-lg-12">
 												<div class="text-center">
-														<h1 class="h4 text-gray-900 mb-4">Delete Article!</h1>
+														<h1 class="h4 text-gray-900 mb-4">Delete Journal!</h1>
 												</div>
-												<p class="p-2"><span class="fw-bold">Are you sure, you want to delete the article?</span><br>
-														<small>Deloeting removes the resources completely from the library resources repository.</small>
+												<p class="p-2"><span class="fw-bold">Are you sure, you want to delete the jouirnal?</span><br>
+														<small>Deleting removes the resource completely from the library resources repository.</small>
 												</p>
 												<form class="user">
 														<div class="modal-footer mb-0">

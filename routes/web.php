@@ -25,6 +25,22 @@ Route::prefix('admin')->group(function () {
     Route::get('/articles', function () {
         return view('dashboard.admin.articles');
     })->name('resource-articles');
+
+    Route::get('/journals', function () {
+        return view('dashboard.admin.journals');
+    })->name('resource-journals');
+
+    Route::get('/textbooks', function () {
+        return view('dashboard.admin.textbooks');
+    })->name('resource-textbooks');
+
+    Route::get('/lecturenotes', function () {
+        return view('dashboard.admin.lecturenotes');
+    })->name('resource-lecturenotes');
+
+    Route::get('/slides', function () {
+        return view('dashboard.admin.slides');
+    })->name('resource-slides');
 });
 
 

@@ -56,9 +56,10 @@
 						<div class="bg-white py-2 collapse-inner rounded">
 								<h6 class="collapse-header">Manage Resources:</h6>
 								<a class="collapse-item" href="{{ route('resource-articles') }}">Articles</a>
-								<a class="collapse-item" href="{{ route('resource-articles') }}">Journals</a>
-								<a class="collapse-item" href="{{ route('resource-articles') }}">Textbooks</a>
-								<a class="collapse-item" href="{{ route('resource-articles') }}">Others</a>
+								<a class="collapse-item" href="{{ route('resource-journals') }}">Journals</a>
+								<a class="collapse-item" href="{{ route('resource-textbooks') }}">Textbooks</a>
+								<a class="collapse-item" href="{{ route('resource-lecturenotes') }}">Lecture Notes</a>
+								<a class="collapse-item" href="{{ route('resource-slides') }}">Slides</a>
 						</div>
 				</div>
 		</li>

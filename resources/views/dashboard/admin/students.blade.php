@@ -32,9 +32,9 @@
 														<td>Computing & Information Technology</td>
 														<td>Software Engineering</td>
 														<td>Active</td>
-														<td><button class="btn btn-sm btn-danger" title="Block student button" data-bs-toggle="modal"
+														<td><button class="btn btn-sm btn-danger" title="Ban student" data-bs-toggle="modal"
 																		data-bs-target="#block">Ban</button>
-																<button class="btn btn-sm btn-success" title="Unblock student button">Unblock</button>
+																<button class="btn btn-sm btn-success" title="Unban student">Unban</button>
 														</td>
 												</tr>
 										</tbody>
