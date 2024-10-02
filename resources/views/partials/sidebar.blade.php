@@ -3,11 +3,6 @@
 
 		<!-- Sidebar - Brand -->
 		<a class="sidebar-brand d-flex align-items-center justify-content-center mt-5" href="">
-				{{-- <div class="sidebar-brand-icon rotate-n-15">
-						<i class="fas fa-book-open"></i>
-				</div>
-				<div class="sidebar-brand-text mx-3">NBU <sup>E-</sup>Library</div> --}}
-
 				<div class="sidebar-brand-icon logo mx-3 my-10">
 						<img src="{{ asset('img/NBU_Official-Logo.png') }}" class="img-fluid img-thumbnail" alt="NBU Logo">
 				</div>
@@ -26,12 +21,12 @@
 		<!-- Nav Item - Pages Collapse Menu -->
 		<li
 				class="nav-item {{ Route::currentRouteName() == 'manage-staff' || Route::currentRouteName() == 'manage-student' || Route::currentRouteName() == 'manage-visitor' ? 'active' : '' }}">
-				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-						aria-controls="collapseTwo">
+				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsers"
+						aria-expanded="true" aria-controls="collapseTwo">
 						<i class="fas fa-fw fa-users-cog"></i>
 						<span>Users</span>
 				</a>
-				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+				<div id="collapseUsers" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 						<div class="bg-white py-2 collapse-inner rounded">
 								<h6 class="collapse-header">Manage Users:</h6>
 								<a class="collapse-item" href="{{ route('manage-staff') }}">Staffs</a>
@@ -46,13 +41,13 @@
 
 		<!-- Nav Item - Utilities Collapse Menu -->
 		<li
-				class="nav-item {{ Route::currentRouteName() == 'resource-articles' || Route::currentRouteName() == 'resource-journals' || Route::currentRouteName() == 'resource-textbooks' || Route::currentRouteName() == 'resource-others' ? 'active' : '' }}">
-				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+				class="nav-item {{ Route::currentRouteName() == 'resource-articles' || Route::currentRouteName() == 'resource-journals' || Route::currentRouteName() == 'resource-textbooks' || Route::currentRouteName() == 'resource-lecturenotes' || Route::currentRouteName() == 'resource-slides' ? 'active' : '' }}">
+				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseResources"
 						aria-expanded="true" aria-controls="collapseUtilities">
 						<i class="fas fa-fw fa-book"></i>
 						<span>Resources</span>
 				</a>
-				<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+				<div id="collapseResources" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 						<div class="bg-white py-2 collapse-inner rounded">
 								<h6 class="collapse-header">Manage Resources:</h6>
 								<a class="collapse-item" href="{{ route('resource-articles') }}">Articles</a>
@@ -75,8 +70,8 @@
 		<hr class="sidebar-divider">
 
 		<!-- Nav Item - Settings -->
-		<li class="nav-item {{ Route::currentRouteName() == 'admin-setting' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+		<li class="nav-item {{ Route::currentRouteName() == 'admin-settings' ? 'active' : '' }}">
+				<a class="nav-link" href="{{ route('admin-settings') }}">
 						<i class="fas fa-fw fa-tools"></i>
 						<span>Settings</span></a>
 		</li>

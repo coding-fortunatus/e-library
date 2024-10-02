@@ -41,6 +41,24 @@ Route::prefix('admin')->group(function () {
     Route::get('/slides', function () {
         return view('dashboard.admin.slides');
     })->name('resource-slides');
+
+    // Admin settings
+    Route::get('/settings', function () {
+        return view('dashboard.admin.settings');
+    })->name('admin-settings');
+});
+
+// 404 Page
+Route::get('/error', function () {
+    return view('404');
+});
+
+
+// Student Routes
+Route::prefix('student')->group(function () {
+    Route::get('/home', function () {
+        return view('dashboard.student.homepage');
+    })->name('homepage');
 });
 
 
@@ -51,9 +69,3 @@ Route::prefix('staff')->group(function () {
     });
 });
 
-// Student Routes
-Route::prefix('student')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboad.student.dashboard');
-    });
-});
