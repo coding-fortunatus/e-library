@@ -11,7 +11,7 @@
 		<!-- Nav Items -->
 
 		<li class="nav-item mt-5 {{ Route::currentRouteName() == 'homepage' ? 'active' : '' }}">
-				<a class="nav-link" href="{{ route('homepage') }}">
+				<a class="nav-link" href="{{ route('homepage') }}" wire:navigate>
 						<i class="fas fa-fw fa-home"></i>
 						<span>Homepage</span></a>
 		</li>
@@ -19,7 +19,7 @@
 		<hr class="sidebar-divider">
 
 		<li class="nav-item {{ Route::currentRouteName() == 'articles' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+				<a class="nav-link" href="{{ route('articles') }}" wire:navigate>
 						<i class="fas fa-fw fa-newspaper"></i>
 						<span>Articles</span></a>
 		</li>
@@ -27,15 +27,15 @@
 		<hr class="sidebar-divider">
 
 		<li class="nav-item {{ Route::currentRouteName() == 'journals' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+				<a class="nav-link" href="{{ route('journals') }}" wire:navigate>
 						<i class="fas fa-fw fa-newspaper"></i>
 						<span>Journals</span></a>
 		</li>
 		<!-- Divider -->
 		<hr class="sidebar-divider">
 
-		<li class="nav-item{{ Route::currentRouteName() == 'textbooks' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+		<li class="nav-item {{ Route::currentRouteName() == 'textbooks' ? 'active' : '' }}">
+				<a class="nav-link" href="{{ route('textbooks') }}" wire:navigate>
 						<i class="fas fa-fw fa-book-open"></i>
 						<span>Textbooks</span></a>
 		</li>
@@ -43,7 +43,7 @@
 		<hr class="sidebar-divider">
 
 		<li class="nav-item {{ Route::currentRouteName() == 'lecturenotes' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+				<a class="nav-link" href="{{ route('lecturenotes') }}" wire:navigate>
 						<i class="fas fa-fw fa-file-pdf"></i>
 						<span>Lecture Notes</span></a>
 		</li>
@@ -51,7 +51,7 @@
 		<hr class="sidebar-divider">
 
 		<li class="nav-item {{ Route::currentRouteName() == 'slides' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+				<a class="nav-link" href="{{ route('slides') }}" wire:navigate>
 						<i class="fas fa-fw fa-file-powerpoint"></i>
 						<span>Slides</span></a>
 		</li>
@@ -60,7 +60,7 @@
 
 		<!-- Nav Item - Settings -->
 		<li class="nav-item {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+				<a class="nav-link" href="{{ route('profile') }}" wire:navigate>
 						<i class="fas fa-fw fa-id-card"></i>
 						<span>Profile</span></a>
 		</li>

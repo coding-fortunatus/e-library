@@ -59,6 +59,30 @@ Route::prefix('student')->group(function () {
     Route::get('/home', function () {
         return view('dashboard.student.homepage');
     })->name('homepage');
+
+    Route::get('/articles', function () {
+        return view('dashboard.student.articles');
+    })->name('articles');
+
+    Route::get('/journals', function () {
+        return view('dashboard.student.journals');
+    })->name('journals');
+
+    Route::get('/textbooks', function () {
+        return view('dashboard.student.textbooks');
+    })->name('textbooks');
+
+    Route::get('/lecturenotes', function () {
+        return view('dashboard.student.lecturenotes');
+    })->name('lecturenotes');
+
+    Route::get('/slides', function () {
+        return view('dashboard.student.slides');
+    })->name('slides');
+
+    Route::get('/profile', function () {
+        return view('dashboard.student.profile');
+    })->name('profile');
 });
 
 

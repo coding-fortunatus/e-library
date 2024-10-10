@@ -10,7 +10,7 @@
 
 		<!-- Nav Item - Dashboard -->
 		<li class="nav-item mt-5 {{ Route::currentRouteName() == 'admin-dashboard' ? 'active' : '' }}">
-				<a class="nav-link" href="{{ route('admin-dashboard') }}">
+				<a wire:navigate class="nav-link" href="{{ route('admin-dashboard') }}" wire:navigate>
 						<i class="fas fa-fw fa-tachometer-alt"></i>
 						<span>Dashboard</span></a>
 		</li>
@@ -29,9 +29,9 @@
 				<div id="collapseUsers" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 						<div class="bg-white py-2 collapse-inner rounded">
 								<h6 class="collapse-header">Manage Users:</h6>
-								<a class="collapse-item" href="{{ route('manage-staff') }}">Staffs</a>
-								<a class="collapse-item" href="{{ route('manage-student') }}">Students</a>
-								<a class="collapse-item" href="{{ route('manage-visitor') }}">Visitors</a>
+								<a class="collapse-item" href="{{ route('manage-staff') }}" wire:navigate>Staffs</a>
+								<a class="collapse-item" href="{{ route('manage-student') }}" wire:navigate>Students</a>
+								<a class="collapse-item" href="{{ route('manage-visitor') }}" wire:navigate>Visitors</a>
 						</div>
 				</div>
 		</li>
@@ -50,11 +50,11 @@
 				<div id="collapseResources" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 						<div class="bg-white py-2 collapse-inner rounded">
 								<h6 class="collapse-header">Manage Resources:</h6>
-								<a class="collapse-item" href="{{ route('resource-articles') }}">Articles</a>
-								<a class="collapse-item" href="{{ route('resource-journals') }}">Journals</a>
-								<a class="collapse-item" href="{{ route('resource-textbooks') }}">Textbooks</a>
-								<a class="collapse-item" href="{{ route('resource-lecturenotes') }}">Lecture Notes</a>
-								<a class="collapse-item" href="{{ route('resource-slides') }}">Slides</a>
+								<a class="collapse-item" href="{{ route('resource-articles') }}" wire:navigate>Articles</a>
+								<a class="collapse-item" href="{{ route('resource-journals') }}" wire:navigate>Journals</a>
+								<a class="collapse-item" href="{{ route('resource-textbooks') }}" wire:navigate>Textbooks</a>
+								<a class="collapse-item" href="{{ route('resource-lecturenotes') }}" wire:navigate>Lecture Notes</a>
+								<a class="collapse-item" href="{{ route('resource-slides') }}" wire:navigate>Slides</a>
 						</div>
 				</div>
 		</li>
@@ -63,7 +63,7 @@
 
 		<!-- Nav Item - Reports & Logs -->
 		<li class="nav-item {{ Route::currentRouteName() == 'admin-reports-logs' ? 'active' : '' }}">
-				<a class="nav-link" href="">
+				<a class="nav-link" href="" wire:navigate>
 						<i class="fas fa-fw fa-flag"></i>
 						<span>Reports & Logs</span></a>
 		</li>
@@ -71,7 +71,7 @@
 
 		<!-- Nav Item - Settings -->
 		<li class="nav-item {{ Route::currentRouteName() == 'admin-settings' ? 'active' : '' }}">
-				<a class="nav-link" href="{{ route('admin-settings') }}">
+				<a class="nav-link" href="{{ route('admin-settings') }}" wire:navigate>
 						<i class="fas fa-fw fa-tools"></i>
 						<span>Settings</span></a>
 		</li>

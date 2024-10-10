@@ -1,5 +1,5 @@
 @section('title')
-		Home page - E-library
+		Student Home page - E-library
 @endsection
 @extends('main')
 @section('content')

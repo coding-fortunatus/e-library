@@ -4,8 +4,11 @@
 		<head>
 				@include('partials.header', ['title' => 'E-Library - Nigeria British University'])
 				<title>@yield('title')</title>
+				<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+				@livewireStyles
 		</head>
 		<!-- Page Wrapper -->
+		@livewireScripts
 		<div id="wrapper">
 				@if (Request::segment(1) == 'admin')
 						@include('partials.sidebar')

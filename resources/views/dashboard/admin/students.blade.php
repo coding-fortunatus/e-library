@@ -17,6 +17,7 @@
 														<th>Matric number</th>
 														<th>Email</th>
 														<th>Phone Number</th>
+														<th>Gender</th>
 														<th>Faculty</th>
 														<th>Department</th>
 														<th>Status</th>
@@ -29,6 +30,7 @@
 														<td>NBU/SOE/24/15423</td>
 														<td>raymon.dwight@nbu.edu.ng</td>
 														<td>08176593438</td>
+														<td>Female</td>
 														<td>Computing & Information Technology</td>
 														<td>Software Engineering</td>
 														<td>Active</td>
