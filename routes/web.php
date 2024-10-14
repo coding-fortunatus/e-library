@@ -2,6 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Auth Routes
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('welcome');
+
 // Admin Routes
 Route::prefix('admin')->group(function () {
     // Users routes
@@ -84,7 +93,6 @@ Route::prefix('student')->group(function () {
         return view('dashboard.student.profile');
     })->name('profile');
 });
-
 
 // Staff Routes
 Route::prefix('staff')->group(function () {
