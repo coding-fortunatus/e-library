@@ -21,7 +21,6 @@ return new class extends Migration {
             $table->foreignIdFor(Department::class);
             $table->string('office');
             $table->string('status')->default('Non-academic');
-            $table->string('role')->default('Staff');
             $table->timestamps();
         });
     }

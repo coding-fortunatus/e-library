@@ -20,6 +20,7 @@ class User extends Authenticatable
         'username',
         'recovery_pin',
         'password',
+        'role',
     ];
 
     /**

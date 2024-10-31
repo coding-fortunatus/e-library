@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->string('username');
             $table->integer('recovery_pin');
             $table->string('password');
+            $table->string('role');
             $table->rememberToken();
             $table->timestamps();
         });

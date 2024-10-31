@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Lecturenote extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'course',
+        'author',
+        'department_id',
+        'publication_year',
+        'pages',
+        'publisher',
+        'available_to',
+    ];
 }
