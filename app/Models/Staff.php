@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Staff extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'fullname',
         'email',
@@ -17,4 +19,9 @@ class Staff extends Model
         'office',
         'status',
     ];
+
+    public function user() : HasOne
+    {
+        return $this->hasOne(User::class);
+    }
 }

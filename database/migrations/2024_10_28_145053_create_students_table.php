@@ -18,8 +18,8 @@ return new class extends Migration {
             $table->string('fullname');
             $table->string('email')->unique();
             $table->string('matric_number')->unique();
-            $table->foreignIdFor(Faculty::class);
-            $table->foreignIdFor(Department::class);
+            $table->foreignIdFor(Faculty::class)->nullable()->cascadeOnDelete();
+            $table->foreignIdFor(Department::class)->nullable()->cascadeOnDelete();
             $table->string('status')->default('In-active');
             $table->timestamps();
         });

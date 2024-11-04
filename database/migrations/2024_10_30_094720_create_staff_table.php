@@ -12,13 +12,13 @@ return new class extends Migration {
      */
     public function up() : void
     {
-        Schema::create('staffs', function (Blueprint $table) {
+        Schema::create('staff', function (Blueprint $table) {
             $table->id();
             $table->string('fullname');
             $table->string('email')->unique();
             $table->string('staff_id')->unique();
             $table->integer('phone');
-            $table->foreignIdFor(Department::class);
+            $table->foreignIdFor(Department::class)->nullable()->cascadeOnDelete();
             $table->string('office');
             $table->string('status')->default('Non-academic');
             $table->timestamps();
